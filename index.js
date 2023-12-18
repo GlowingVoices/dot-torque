@@ -9,7 +9,7 @@ const runButton = document.getElementById("run");
 runButton.addEventListener('click', () => {
  if (finalRPM.value && motorCount.value) {
    let torque = ((210)/finalRPM.value)*(motorCount.value/2);
-   alert('Torque output: ' + Math.round((torque*1000))/1000 + " Newton Meters");
+   alert('Torque output: ' + Math.round((torque*1000))/1000 + " Newton Meters per side.");
  } else {
    alert('You need to enter values into both the boxes');
  }

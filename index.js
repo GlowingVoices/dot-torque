@@ -17,8 +17,8 @@ document.addEventListener('keyup', function(event) {
 
 function submit_input() {
     if (finalRPM.value && motorCount.value) {
-        let torque = ((210) / finalRPM.value) * (motorCount.value / 2);
-        alert('Torque output: ' + Math.round((torque * 1000)) / 1000 + " Newton Meters per side.");
+        let torque = ((210) / finalRPM.value) * (motorCount.value);
+        alert('Torque output: ' + Math.round((torque * 1000)) / 1000 + " Newton Meters total.");
     } else {
         alert('You need to enter values into both the boxes');
     }
